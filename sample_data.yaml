@@ -1,0 +1,75 @@
+# Przykładowe dane startowe do prototypu gry "Symulator Dynastii"
+
+player:
+  name: "Jan Kowalski"
+  age: 28
+  family:
+    spouse: "Anna Kowalska"
+    children: []
+    parents: ["Marek Kowalski", "Maria Kowalska"]
+  education: "Ekonomia, SGH"
+  morality: 50  # 0 - czarny charakter, 100 - kryształowy
+  skills:
+    negotiation: 60
+    management: 55
+    manipulation: 40
+    technology: 35
+  reputation:
+    personal: 50
+    business: 45
+    underworld: 20
+
+businesses:
+  - name: "Kowalski Consulting"
+    city: "Warszawa"
+    type: "konsulting"
+    legal: true
+    revenue: 50000
+    employees: 7
+    branches: []
+
+properties:
+  - name: "Apartament w Warszawie"
+    type: "apartment"
+    value: 1200000
+    rented: false
+  - name: "Działka w Zakopanem"
+    type: "land"
+    value: 350000
+    rented: false
+
+underworld_contacts:
+  - name: "Andrzej 'Cień' Nowak"
+    role: "mentor"
+    trust: 70
+    risk: 30
+
+clubs:
+  - name: "FC Przyszłość"
+    budget: 300000
+    stadium: "Stadion Miejski"
+    fans: 1500
+    youth_academy: true
+    league: "III Liga Polska"
+
+events:
+  - type: "scandal"
+    description: "Media ujawniają możliwy konflikt interesów w firmie gracza."
+    risk: 40
+    effect: "spadek reputacji biznesowej"
+  - type: "crisis"
+    description: "Nagły spadek na giełdzie."
+    risk: 25
+    effect: "utrata 10% wartości firmy"
+
+missions:
+  - name: "Pranie pieniędzy"
+    type: "underworld"
+    risk: 60
+    reward: 50000
+  - name: "Pozyskanie nowego klienta"
+    type: "business"
+    risk: 10
+    reward: 15000
+
+# ... dalsze dane przykładowe według potrzeb prototypu
