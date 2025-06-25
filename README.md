@@ -23,7 +23,7 @@
   - Główne biuro jako najwyższy poziom.
   - Filie w różnych miastach na świecie (np. Londyn, Nowy Jork, Tokio).
 - Zarządzanie przez komputer:
-  - Ikony firm, gildii, inwestycji.
+  - Ikony firm, giełda, inwestycje.
   - Ukryte wejście do nielegalnych działań.
 - System wrogich przejęć, manipulacji giełdowej i zdrad.
 
@@ -87,7 +87,7 @@
 
 ---
 
-### 7. **Multiplayer**
+### 7. **Multiplayer (w przyszłości)
 - Rywalizacja online:
   - Ligowe rankingi biznesowe, turnieje piłkarskie.
 - Współpraca:
