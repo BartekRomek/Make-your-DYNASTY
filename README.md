@@ -38,10 +38,30 @@ python src_main.py
 ### 💻 Instalacja na pulpicie
 
 Po pierwszym uruchomieniu gry znajdziesz na pulpicie:
-- **🏰 Dynasty Simulator.command** - skrót do gry
-- **Dynasty Simulator.app** - aplikacja macOS
+
+**Skróty .command:**
+- **🏰 Dynasty Simulator.command** - MENU WYBORU wersji (tekstowa/2D)
+- **🎮 Dynasty Simulator 2D.command** - bezpośrednio wersja 2D
+
+**Aplikacje macOS:**
+- **Dynasty Simulator.app** - wersja tekstowa
+- **Dynasty Simulator 2D.app** - wersja graficzna 2D
 
 **Wystarczy podwójne kliknięcie!** 🖱️
+
+### 🎯 Która wersja dla mnie?
+
+**🔤 Wersja tekstowa** - jeśli lubisz:
+- Klasyczne gry RPG w terminalu
+- Szybkie menu i nawigację klawiaturą
+- Kompleksowe systemy ekonomiczne
+- Pełny system zapisywania gier
+
+**🎮 Wersja 2D** - jeśli lubisz:
+- Graficzny interfejs i kontrolę postaci
+- Eksplorację świata gry
+- Interakcje z NPCs i budynkami
+- Immersyjne doświadczenie wizualne
 
 ### 🎯 Co to za gra?
 

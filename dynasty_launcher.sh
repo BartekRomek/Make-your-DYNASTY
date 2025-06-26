@@ -34,16 +34,52 @@ fi
 # Wyczyść terminal
 clear
 
-# Pokaż logo
+# Pokaż logo i menu wyboru
 echo "🏰 ================================== 🏰"
-echo "    DYNASTY SIMULATOR - PEŁNA GRA"
+echo "        DYNASTY SIMULATOR"
 echo "🏰 ================================== 🏰"
 echo ""
-echo "📍 Uruchamianie z: $GAME_DIR"
+echo "📍 Lokalizacja: $GAME_DIR"
 echo ""
+echo "🎮 Wybierz wersję gry:"
+echo "   1️⃣  Wersja tekstowa (klasyczna)"
+echo "   2️⃣  Wersja 2D (graficzna)"
+echo "   0️⃣  Anuluj"
+echo ""
+read -p "Twój wybór (1/2/0): " choice
 
-# Uruchom grę
-python dynasty_game.py
+case $choice in
+    1)
+        echo ""
+        echo "🔤 Uruchamianie wersji tekstowej..."
+        python dynasty_game.py
+        ;;
+    2)
+        echo ""
+        echo "🎮 Sprawdzam biblioteki dla wersji 2D..."
+        
+        # Sprawdź czy pygame jest zainstalowane
+        python -c "import pygame, pygame_gui" 2>/dev/null
+        if [ $? -ne 0 ]; then
+            echo "🔧 Instaluję biblioteki dla wersji 2D..."
+            pip install pygame pygame-gui
+        fi
+        
+        echo "🎮 Uruchamianie wersji 2D..."
+        echo "🎯 Sterowanie: WASD/Strzałki - ruch, E - interakcja"
+        python dynasty_2d.py
+        ;;
+    0)
+        echo ""
+        echo "👋 Anulowano uruchomienie"
+        exit 0
+        ;;
+    *)
+        echo ""
+        echo "❌ Niepoprawny wybór. Uruchamiam wersję tekstową..."
+        python dynasty_game.py
+        ;;
+esac
 
 # Pauza po zakończeniu gry
 echo ""
