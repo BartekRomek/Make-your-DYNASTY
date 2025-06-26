@@ -1,4 +1,45 @@
-„Make your Dynasty”
+„Make your Dynasty"
+
+## 🚀 Jak uruchomić aplikację
+
+### Wymagania
+- Python 3.8+ 
+- pip (menedżer pakietów Python)
+
+### Instalacja i uruchomienie
+
+#### Metoda 1: Użyj skryptu (zalecane)
+```bash
+./run.sh
+```
+
+#### Metoda 2: Ręcznie
+```bash
+# 1. Stwórz środowisko wirtualne
+python3 -m venv .venv
+
+# 2. Aktywuj środowisko wirtualne
+source .venv/bin/activate  # macOS/Linux
+# lub
+.venv\Scripts\activate     # Windows
+
+# 3. Zainstaluj zależności
+pip install -r requirements.txt
+
+# 4. Uruchom aplikację
+python src_main.py
+```
+
+#### Metoda 3: Bezpośrednio z interpreterem Python
+```bash
+python3 src_main.py
+```
+
+### Co się dzieje po uruchomieniu?
+- Aplikacja ładuje dane przykładowe z pliku `sample_data.yaml`
+- Inicjalizuje wszystkie systemy gry (rodzina, biznes, nieruchomości, piłka nożna, etc.)
+- Wyświetla podstawowe informacje o graczu
+- Pokazuje testowe dane z każdego systemu
 
 ---
 
@@ -120,7 +161,7 @@
 ---
 
 ### 11. **Kontakty z półświatkiem**
-#### A. **Postać z półświatka**
+#### A. **Postać z półświata**
 - **Mentor**:
   - Charyzmatyczna postać wprowadzająca gracza w ciemne interesy.
 - **Relacja**:
