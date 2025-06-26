@@ -1,0 +1,30 @@
+🏰 DYNASTY SIMULATOR - STATYSTYKI GRY
+==================================================
+
+👤 Gracz: Jan Kowalski
+🎂 Wiek: 28 lat
+🎮 Tura: 1
+📅 Data w grze: 01/2025
+💰 Całkowity majątek: 50,000 PLN
+😇 Moralność: 55/100
+
+🎯 UMIEJĘTNOŚCI:
+  Negotiation: 60/100
+  Management: 55/100
+  Manipulation: 40/100
+  Technology: 35/100
+
+🏢 BIZNESY:
+  Kowalski Consulting (Warszawa): 50,000 PLN
+  Łącznie: 1 firm
+
+🏠 NIERUCHOMOŚCI:
+  Łączna wartość: 1,550,000 PLN
+  Liczba nieruchomości: 2
+
+👨‍👩‍👧‍👦 RODZINA:
+  💑 Partner/ka: Anna Nowak
+  👶 Dzieci: 1
+    - Piotr
+
+📊 Raport wygenerowany: 2025-06-27 01:26:59

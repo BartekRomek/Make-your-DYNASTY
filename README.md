@@ -4,24 +4,53 @@
 
 ### 🚀 Jak uruchomić grę
 
-#### Metoda 1: Użyj skryptu (zalecane)
+#### Metoda 1: Z pulpitu (najłatwiejsza) 🖱️
+```
+🏰 Podwójne kliknięcie na "Dynasty Simulator" na pulpicie
+```
+
+#### Metoda 2: Użyj skryptu w folderze gry
+**Wersja tekstowa:**
 ```bash
 ./run.sh
 ```
 
-#### Metoda 2: Bezpośrednio
+**Wersja 2D:**
+```bash
+./run_2d.sh
+```
+
+#### Metoda 3: Bezpośrednio
 ```bash
 python dynasty_game.py
 ```
 
-#### Metoda 3: Prototyp (tylko demo)
+#### Metoda 4: Wersja 2D (graficzna) 🎮
+```bash
+python dynasty_2d.py
+```
+
+#### Metoda 5: Prototyp (tylko demo)
 ```bash
 python src_main.py
 ```
 
+### 💻 Instalacja na pulpicie
+
+Po pierwszym uruchomieniu gry znajdziesz na pulpicie:
+- **🏰 Dynasty Simulator.command** - skrót do gry
+- **Dynasty Simulator.app** - aplikacja macOS
+
+**Wystarczy podwójne kliknięcie!** 🖱️
+
 ### 🎯 Co to za gra?
 
-**Dynasty Simulator** to pełnoprawna gra symulacyjna, w której budujesz swoją dynastię od zera! 
+**Dynasty Simulator** to pełnoprawna gra symulacyjna dostępna w **dwóch wersjach**:
+
+🔤 **Wersja tekstowa** (`dynasty_game.py`) - klasyczna gra konsolowa
+🎮 **Wersja 2D** (`dynasty_2d.py`) - graficzna gra z kontrolą postaci
+
+W obu wersjach budujesz swoją dynastię od zera! 
 
 #### 🎮 Główne mechaniki gry:
 - **👨‍👩‍👧‍👦 Zarządzanie rodziną** - małżeństwo, dzieci, relacje
@@ -59,17 +88,35 @@ python src_main.py
 6. **Reaguj na wydarzenia** - Losowe sytuacje wymagają reakcji
 
 ### 🔧 Wymagania techniczne:
+**Wersja tekstowa:**
 - Python 3.8+
 - PyYAML (automatycznie instalowane)
-- Terminal/Konsola (gra tekstowa)
+- Terminal/Konsola
+
+**Wersja 2D:**
+- Python 3.8+
+- PyYAML, pygame, pygame-gui (automatycznie instalowane)
+- Środowisko graficzne (nie działa przez SSH)
 
 ### 📊 Status rozwoju:
+**Wersja tekstowa:**
 - ✅ **Kompletne systemy**: Rodzina, Biznes, Nieruchomości, Piłka nożna
 - ✅ **Działająca ekonomia**: Pasywne przychody, koszty, inwestycje  
 - ✅ **Interaktywne menu**: Pełna nawigacja po grze
 - ✅ **System wydarzeń**: Losowe sytuacje i wyzwania
+- ✅ **Zapis/wczytywanie**: Pełny system save/load
 - 🔄 **W rozwoju**: System edukacji, półświatek (częściowo)
-- 🔄 **Planowane**: Zapis gry, multiplayer, graficzny interfejs
+
+**Wersja 2D:**
+- ✅ **Graficzny interfejs**: Pełne 2D z pygame
+- ✅ **Kontrola postaci**: Ruch WASD/strzałkami
+- ✅ **Interaktywny świat**: Budynki, NPCs, dialogi
+- ✅ **System HUD**: Statystyki gracza, umiejętności
+- ✅ **Menu i inwentarz**: Pełna nawigacja
+- 🔄 **W rozwoju**: Rozszerzone mechaniki, animacje
+
+**Planowane dla obu wersji:**
+- 🔄 **Multiplayer**, **Zaawansowany AI**, **Więcej lokacji**
 
 ---
 
