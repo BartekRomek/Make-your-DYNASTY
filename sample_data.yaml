@@ -1,4 +1,4 @@
-# Przykładowe dane startowe do prototypu gry "Symulator Dynastii"
+# Przykładowe dane startowe do gry "Dynasty Simulator"
 
 player:
   name: "Jan Kowalski"
@@ -18,6 +18,7 @@ player:
     personal: 50
     business: 45
     underworld: 20
+  cash: 100000  # Gotówka na start
 
 businesses:
   - name: "Kowalski Consulting"
@@ -27,22 +28,29 @@ businesses:
     revenue: 50000
     employees: 7
     branches: []
+    monthly_profit: 5000
 
 properties:
   - name: "Apartament w Warszawie"
     type: "apartment"
     value: 1200000
     rented: false
+    monthly_income: 0
   - name: "Działka w Zakopanem"
     type: "land"
     value: 350000
     rented: false
+    monthly_income: 0
 
 underworld_contacts:
   - name: "Andrzej 'Cień' Nowak"
     role: "mentor"
     trust: 70
     risk: 30
+  - name: "Viktor 'Shark' Kowalczyk"
+    role: "smuggler"
+    trust: 45
+    risk: 60
 
 clubs:
   - name: "FC Przyszłość"
@@ -51,6 +59,7 @@ clubs:
     fans: 1500
     youth_academy: true
     league: "III Liga Polska"
+    monthly_income: 15000
 
 events:
   - type: "scandal"
@@ -58,18 +67,79 @@ events:
     risk: 40
     effect: "spadek reputacji biznesowej"
   - type: "crisis"
-    description: "Nagły spadek na giełdzie."
+    description: "Nagły spadek na giełdzie dotyka wszystkich inwestorów."
     risk: 25
-    effect: "utrata 10% wartości firmy"
+    effect: "utrata 10% wartości firm"
+  - type: "opportunity"
+    description: "Pojawiła się okazja do lukratywnej inwestycji."
+    risk: 15
+    effect: "możliwość szybkiego zysku"
+  - type: "family"
+    description: "Konflikt w rodzinie wymaga twojej interwencji."
+    risk: 20
+    effect: "wpływ na moralność i relacje"
 
 missions:
   - name: "Pranie pieniędzy"
     type: "underworld"
     risk: 60
     reward: 50000
+    description: "Wyczyść brudne pieniądze przez twoje biznesy"
   - name: "Pozyskanie nowego klienta"
     type: "business"
     risk: 10
     reward: 15000
+    description: "Zdobądź nowego klienta dla firmy konsultingowej"
+  - name: "Inwestycja w nieruchomość"
+    type: "property"
+    risk: 25
+    reward: 30000
+    description: "Kup i odsprzedaj nieruchomość z zyskiem"
+  - name: "Transfer piłkarski"
+    type: "football"
+    risk: 30
+    reward: 25000
+    description: "Sprowadź utalentowanego gracza do klubu"
 
-# ... dalsze dane przykładowe według potrzeb prototypu
+# Dodatkowe dane dla rozbudowanej rozgrywki
+game_settings:
+  starting_cash: 100000
+  max_age: 80
+  win_conditions:
+    - "Osiągnij wartość majątku 100 milionów PLN"
+    - "Zostań właścicielem 5 firm w różnych branżach"
+    - "Wykształć następcę i przekaż mu dynastię"
+  
+random_events:
+  positive:
+    - "Jeden z twoich biznesów dostaje duże zamówienie"
+    - "Dziecko dostaje się na prestiżowy uniwersytet"
+    - "Klub piłkarski wygrywa ważny mecz"
+  negative:
+    - "Kontrola skarbowa w jednej z firm"
+    - "Kryzys w branży wpływa na przychody"
+    - "Skandal w mediach dotyczący twojej osoby"
+
+available_cities:
+  - "Warszawa"
+  - "Kraków"
+  - "Gdańsk"
+  - "Wrocław"
+  - "Poznań"
+  - "Łódź"
+  - "Katowice"
+  - "Lublin"
+
+business_types:
+  - type: "restaurant"
+    min_investment: 50000
+    monthly_profit_rate: 0.08
+  - type: "tech"
+    min_investment: 100000
+    monthly_profit_rate: 0.12
+  - type: "construction"
+    min_investment: 200000
+    monthly_profit_rate: 0.06
+  - type: "retail"
+    min_investment: 75000
+    monthly_profit_rate: 0.10

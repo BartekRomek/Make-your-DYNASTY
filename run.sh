@@ -1,8 +1,9 @@
 #!/bin/bash
 
-# Skrypt do uruchomienia aplikacji Dynasty Simulator
+# Skrypt do uruchomienia Dynasty Simulator - Pełnej Gry
 
-echo "🏰 Uruchamianie Dynasty Simulator..."
+echo "🏰 Dynasty Simulator - Zbuduj swoją dynastię!"
+echo "=============================================="
 
 # Sprawdź czy istnieje środowisko wirtualne
 if [ ! -d ".venv" ]; then
@@ -15,10 +16,15 @@ source .venv/bin/activate
 
 # Zainstaluj zależności
 echo "📦 Instalowanie zależności..."
-pip install -r requirements.txt
+pip install -r requirements.txt > /dev/null 2>&1
 
-# Uruchom aplikację
-echo "🚀 Uruchamianie aplikacji..."
-python src_main.py
+# Wyczyść ekran
+clear
 
-echo "✅ Aplikacja zakończona."
+# Uruchom pełną grę
+echo "🚀 Uruchamianie Dynasty Simulator..."
+echo ""
+python dynasty_game.py
+
+echo ""
+echo "✅ Dziękujemy za grę w Dynasty Simulator!"

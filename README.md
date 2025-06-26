@@ -1,45 +1,75 @@
 „Make your Dynasty"
 
-## 🚀 Jak uruchomić aplikację
+## 🎮 PEŁNA GRA - Dynasty Simulator
 
-### Wymagania
-- Python 3.8+ 
-- pip (menedżer pakietów Python)
-
-### Instalacja i uruchomienie
+### 🚀 Jak uruchomić grę
 
 #### Metoda 1: Użyj skryptu (zalecane)
 ```bash
 ./run.sh
 ```
 
-#### Metoda 2: Ręcznie
+#### Metoda 2: Bezpośrednio
 ```bash
-# 1. Stwórz środowisko wirtualne
-python3 -m venv .venv
+python dynasty_game.py
+```
 
-# 2. Aktywuj środowisko wirtualne
-source .venv/bin/activate  # macOS/Linux
-# lub
-.venv\Scripts\activate     # Windows
-
-# 3. Zainstaluj zależności
-pip install -r requirements.txt
-
-# 4. Uruchom aplikację
+#### Metoda 3: Prototyp (tylko demo)
+```bash
 python src_main.py
 ```
 
-#### Metoda 3: Bezpośrednio z interpreterem Python
-```bash
-python3 src_main.py
-```
+### 🎯 Co to za gra?
 
-### Co się dzieje po uruchomieniu?
-- Aplikacja ładuje dane przykładowe z pliku `sample_data.yaml`
-- Inicjalizuje wszystkie systemy gry (rodzina, biznes, nieruchomości, piłka nożna, etc.)
-- Wyświetla podstawowe informacje o graczu
-- Pokazuje testowe dane z każdego systemu
+**Dynasty Simulator** to pełnoprawna gra symulacyjna, w której budujesz swoją dynastię od zera! 
+
+#### 🎮 Główne mechaniki gry:
+- **👨‍👩‍👧‍👦 Zarządzanie rodziną** - małżeństwo, dzieci, relacje
+- **🏢 Imperium biznesowe** - zakładaj firmy, inwestuj, rozwijaj
+- **🏠 Nieruchomości** - kupuj, wynajmuj, rozbudowuj
+- **⚽ Kluby piłkarskie** - zarządzaj drużyną, kupuj zawodników
+- **🎓 Edukacja** - rozwijaj umiejętności, zdobywaj certyfikaty
+- **🌑 Półświatek** - ryzykowne, ale lukratywne działania
+- **📰 Wydarzenia** - reaguj na losowe sytuacje
+
+#### 💰 System ekonomiczny:
+- **Pasywne przychody** z biznesów i wynajmu
+- **Miesięczne tury** z automatycznymi zyskami
+- **Inwestycje** w rozwój firm i nieruchomości
+- **Koszty utrzymania** - każda decyzja ma swoją cenę
+
+#### 🎯 Cele gry:
+- Osiągnij majątek 100 milionów PLN
+- Zostań właścicielem 5 firm w różnych branżach  
+- Wykształć następcę i przekaż mu dynastię
+- Zbuduj rodzinne imperium na pokolenia
+
+#### ⚖️ System moralności:
+- **Legalne działania** - powolny, ale bezpieczny rozwój
+- **Nielegalne metody** - szybkie zyski, ale wysokie ryzyko
+- **Konsekwencje wyborów** wpływają na reputację i relacje
+
+### 🎮 Jak grać?
+
+1. **Start** - Rozpoczynasz z 100,000 PLN i podstawowymi umiejętnościami
+2. **Menu główne** - Wybierz co chcesz robić (rodzina, biznes, nieruchomości, etc.)
+3. **Rozwijaj się** - Inwestuj, ucz się, buduj relacje
+4. **Podejmuj decyzje** - Każdy wybór ma konsekwencje
+5. **Następna tura** - Czas płynie, otrzymujesz pasywne przychody
+6. **Reaguj na wydarzenia** - Losowe sytuacje wymagają reakcji
+
+### 🔧 Wymagania techniczne:
+- Python 3.8+
+- PyYAML (automatycznie instalowane)
+- Terminal/Konsola (gra tekstowa)
+
+### 📊 Status rozwoju:
+- ✅ **Kompletne systemy**: Rodzina, Biznes, Nieruchomości, Piłka nożna
+- ✅ **Działająca ekonomia**: Pasywne przychody, koszty, inwestycje  
+- ✅ **Interaktywne menu**: Pełna nawigacja po grze
+- ✅ **System wydarzeń**: Losowe sytuacje i wyzwania
+- 🔄 **W rozwoju**: System edukacji, półświatek (częściowo)
+- 🔄 **Planowane**: Zapis gry, multiplayer, graficzny interfejs
 
 ---
 
